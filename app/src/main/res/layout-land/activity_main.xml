@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/reset_button" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_title"
+                android:textSize="@dimen/title" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/text_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/team_name_a"
+                                android:textSize="@dimen/text_size" />
+
+                            <TextView
+                                android:id="@+id/team_sets_a"
+                                style="@style/text_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/sets_number_team_b"
+                                android:textSize="@dimen/text_size" />
+                        </LinearLayout>
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/latvia_flag_image"
+                            android:layout_width="@dimen/image_size_land"
+                            android:layout_height="@dimen/image_size_land"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/image_margin"
+                            android:src="@drawable/russia"
+                            app:border_color="@color/borderColor"
+                            app:border_width="@dimen/border_width" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/russia_flag_image"
+                            android:layout_width="@dimen/image_size_land"
+                            android:layout_height="@dimen/image_size_land"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/image_margin"
+                            android:src="@drawable/latvia"
+                            app:border_color="@color/borderColor"
+                            app:border_width="@dimen/border_width" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/text_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/team_name_b"
+                                android:textSize="@dimen/text_size" />
+
+                            <TextView
+                                android:id="@+id/team_sets_b"
+                                style="@style/text_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/sets_number_team_a"
+                                android:textSize="@dimen/text_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.75"
+                    android:orientation="vertical">
+
+                    <View style="@style/vertical_line"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/add_point_team_a"
+                            style="@style/button"
+                            android:text="@string/add_point" />
+
+                        <TextView
+                            android:id="@+id/points_view_team_a"
+                            style="@style/text_style"
+                            android:layout_width="@dimen/textview_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/textview_left_margin"
+                            android:layout_marginStart="@dimen/textview_left_margin"
+                            android:text="@string/points_team_a" />
+
+                        <TextView
+                            style="@style/text_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="@string/point" />
+
+                        <TextView
+                            android:id="@+id/points_view_team_b"
+                            style="@style/text_style"
+                            android:layout_width="@dimen/textview_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/textview_left_margin"
+                            android:layout_marginRight="@dimen/textview_left_margin"
+                            android:text="@string/timeouts_team_b" />
+
+                        <Button
+                            android:id="@+id/add_point_team_b"
+                            style="@style/button"
+                            android:text="@string/add_point" />
+                    </LinearLayout>
+
+                    <View style="@style/vertical_line"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/add_subs_team_a"
+                                style="@style/button"
+                                android:text="@string/add_point" />
+
+                            <TextView
+                                android:id="@+id/subs_view_team_a"
+                                style="@style/text_style"
+                                android:layout_width="@dimen/textview_width"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/textview_left_margin"
+                                android:layout_marginStart="@dimen/textview_left_margin"
+                                android:text="@string/timeouts_team_a" />
+
+                            <TextView
+                                style="@style/text_style"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="@string/subs" />
+
+                            <TextView
+                                android:id="@+id/subs_view_team_b"
+                                style="@style/text_style"
+                                android:layout_width="@dimen/textview_width"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/textview_left_margin"
+                                android:layout_marginRight="@dimen/textview_left_margin"
+                                android:text="@string/timeouts_team_b" />
+
+                            <Button
+                                android:id="@+id/add_subs_team_b"
+                                style="@style/button"
+                                android:text="@string/add_point" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View style="@style/vertical_line"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/add_timeout_team_a"
+                                style="@style/button"
+                                android:text="@string/add_point" />
+
+                            <TextView
+                                android:id="@+id/timeouts_view_team_a"
+                                style="@style/text_style"
+                                android:layout_width="@dimen/textview_width"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/textview_left_margin"
+                                android:layout_marginStart="@dimen/textview_left_margin"
+                                android:text="@string/timeouts_team_a" />
+
+                            <TextView
+                                style="@style/text_style"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="@string/timeouts" />
+
+                            <TextView
+                                android:id="@+id/timeouts_view_team_b"
+                                style="@style/text_style"
+                                android:layout_width="@dimen/textview_width"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/textview_left_margin"
+                                android:layout_marginRight="@dimen/textview_left_margin"
+                                android:text="@string/timeouts_team_b" />
+
+                            <Button
+                                android:id="@+id/add_timeout_team_b"
+                                style="@style/button"
+                                android:text="@string/add_point" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View style="@style/vertical_line"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/winning_team_text"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

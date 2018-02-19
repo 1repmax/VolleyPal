@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">32sp</dimen>
+    <dimen name="number_size">20sp</dimen>
+    <dimen name="reset_button_margin_bottom">14dp</dimen>
+    <dimen name="score_top_margin">8dp</dimen>
+    <dimen name="title">18sp</dimen>
+    <dimen name="image_size_port">100dp</dimen>
+    <dimen name="border_width">1dp</dimen>
+    <dimen name="textview_left_margin">8dp</dimen>
+    <dimen name="textview_width">32dp</dimen>
+    <dimen name="winning_team_top_margin">16dp</dimen>
+    <dimen name="image_size_land">85dp</dimen>
+    <dimen name="image_margin">24dp</dimen>
+</resources>

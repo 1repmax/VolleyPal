@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppMaterialTheme" parent="SuperMaterialTheme">
+        <!-- Customise your app theme here -->
+
+    </style>
+
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Parent theme for all Pre-Lollipop and above versions. I.e. for all devices. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:elevation">12dp</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/number_size</item>
+    </style>
+
+    <style name="left_side_text">
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+    <style name="vertical_line">
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+
+</resources>

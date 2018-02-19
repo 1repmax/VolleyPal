@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">VolleyPal</string>
+    <string name="app_title">European Open Championships</string>
+    <string name="reset_button">Reset</string>
+    <string name="team_name_a">Russia</string>
+    <string name="team_name_b">Latvia</string>
+    <string name="add_point">+</string>
+    <string name="point">Points</string>
+    <string name="timeouts">Timeout</string>
+    <string name="subs">Substitution</string>
+    <string name="sets_number_team_a">0</string>
+    <string name="sets_number_team_b">0</string>
+    <string name="points_team_a">0</string>
+    <string name="points_team_b">0</string>
+    <string name="subs_team_a">0</string>
+    <string name="subs_team_b">0</string>
+    <string name="timeouts_team_a">0</string>
+    <string name="timeouts_team_b">0</string>
+</resources>
